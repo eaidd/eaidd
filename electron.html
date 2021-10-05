@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Mednolia</title>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33863391-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+ <p align=left ><a href="index.html"><font color="FF0000"><h3>返回主页</h3></font></a>
+<table width="100%" height="40" border="0" cellspacing="0">
+   	<tr>
+	    
+
+ <pre><h2>
+                 蛋白质的全电子结构的量子力学计算方法
+
+	我们创建了一个使用量子力学的计算结合位点的方法，该方法始于J. Ladik和YJ Ye的方法，但该方法
+只能计算出一个很小的蛋白质，我们将其扩展至任意大的蛋白质，并结合了计算具有疏水口袋和前沿轨道扰动
+理论的蛋白质的完整电子结构，特别是我们建立了必要而且充分的三个规则来确定蛋白质的活性口袋，活性残基
+和活性原子作为蛋白质-药物的结合位点。
+
+	该程序使用微积分思想的分而治之的算法将一个复杂的问题递归分解为许多相关的子问题。这些子问题彼此独立，
+并且与原始问题具有相同的特征，因此我们可以使用这些小子问题的解决方案来获得原始的较大问题的解决方案。
+首先，蛋白质的整个链分为许多二聚体，每个二聚体包含两个氨基酸残基。接下来，我们对所有二聚体执行第一性原理
+量子计算，并使用每个二聚体的解去构造一个大的完整汉密顿矩阵。但是这个大的完整汉密顿矩阵接近块的对角线，
+因此我们可以在数学中使用ENFC定理来获得特征值。
+
+    必须考虑解决溶液的效果。在每个二聚体的末端放置几个原子，以模拟该二聚体所处的化学环境。并且来自
+实验的蛋白质的pdb文件缺少氢原子和一些原子，我们必须运行NAMD程序,以添加氢和缺乏原子并将其运行至300K常温。
+    
+	蛋白质分子的系统是如此之大，以至于它的能级极其紧凑。我们需要将蛋白质的前沿轨道的定义扩展为HOMOs和LUMOs，
+而不仅限于单个HOMO和LUMO。例如，蛋白酶RdRp具有52,130个电子，轨道占据数NOCC = 26,065。它共有851个残基，
+因此我们将其分为851个二聚体。并以20个轨道作为LUMOs，这仅是总轨道的0.000767。
+   
+    最后，如何确定了蛋白质-配体相互作用中蛋白质的活性残基或活性原子的三个必要和充分条件.
+     
+    经过量子计算，我们可以将活性口袋和活性原子以及所有候选的小分子药物放入人工智能深度学习3D-CNN程序中，
+以计算结合亲和力。
+
+
+
+             
+</h2>
+</pre></td></tr>
+</table> 
+</body>
+</html>

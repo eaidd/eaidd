@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Mednolia</title>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33863391-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+ <p align=left ><a href="eVersion.html"><font color="FF0000"><h3>English Version</h3></font></a>
+<table width="100%" height="40" border="0" cellspacing="0">
+   	<tr>
+	    
+		
+<p><h1><B>Quantum Mechanical Calculation Method of the All Electronic Structure of Protein</B></h1></p>		
+<pre><h2>
+
+We created a method of calculating binding sites of protein-drug using quantum mechanics. This method 
+started with the method of J. Ladik and YJ Ye, but their method can be calculated a very small protein only.
+We extended it to arbitrarily large proteins and combined the calculation with hydrophobic pockets,frontal 
+orbital perturbations and established three necessary and sufficient rules to determine the active pocket
+,active residue and active atoms.
+
+The program uses the divide-and-conquer algorithm of calculus idea to recursively decompose a complex problem
+into many related sub-problems. These sub-problems are independent of each other,and it has the same characteristics 
+as the original problem, so we can use the solutions of these small sub-problems to get the solutions to the 
+original larger problems. First, the entire chain of a protein is divided into many dimers, each of which 
+contains two amino acid residues. Next, we perform first principles on all dimers quantum computing, and use 
+the solution of each dimer to construct a large complete Hamiltonian matrix. But this large complete Hamiltonian 
+matrix is ​​close to the diagonal of the block,therefore, we can use ENFC theorem in mathematics to obtain eigenvalues.
+
+The effect of the solution must be considered. Place a few atoms at the end of each dimer to simulate the chemical
+environment in which the dimer is located. And from the pdb file of the experimental protein lacks hydrogen atoms
+and some atoms. We must run the NAMD program to add hydrogen and lack atoms and run it to 300K room temperature.
+    
+The protein molecule system is so large that its energy levels are extremely compact. We need to extend the definition
+of the frontier orbitals of proteins to HOMOs and LUMOs,it is not limited to a single HOMO and LUMO. For example, 
+the protease RdRp has 52,130 electrons, and the number of orbitals occupied is NOCC = 26,065. It has a total of 851
+residues,so we divide it into 851 dimers and use 20 tracks as LUMOs, which is only 0.000767 of the total tracks.
+   
+Finally, how to determine the three necessary and sufficient conditions for the active residue or active atom of 
+the protein in the protein-ligand interaction using our three necessary and sufficient rules.
+     
+After quantum computing, we can put the active pockets, active atoms and all candidate small molecule drugs into 
+the artificial intelligence deep learning 3D-CNN program to calculate the binding affinity.
+             
+</h2>
+</pre></td></tr>
+</table> 
+</body>
+</html>
